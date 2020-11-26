@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logRoutes);       
 app.use(defaultRoutes);               // app.use('/blabla', defaultRoutes);
-app.use(apiLibroRoutes);              // app.use('/blabla', defaultRoutes);
+app.use(apiSommaRoutes);              // app.use('/blabla', defaultRoutes);
 app.use(errorContoller.get404Page);    
 apiLibroRoutes
 

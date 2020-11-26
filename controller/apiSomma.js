@@ -30,3 +30,20 @@ exports.insertSomma=(req, res, next) => {
         jsonInviato.inserted_Obj = { ...jsonRicevuto }
         res.json(jsonInviato);  //Invio il risultato al Browser
 }
+
+
+exports.deleteSomma=(req, res, next) => {
+        let reqId = req.params.N;
+        let jsonInviato = { "msg": `id: ${reqId} succesfully deleted ` }
+        res.json(jsonInviato);  //Invio il risultato al Browser
+}
+
+
+exports.updateSomma=(req, res, next) => {
+        let reqId = req.params.N;
+        let jsonRicevuto = req.body;
+        let jsonInviato = {}
+        jsonInviato.ricevuto = { ...jsonRicevuto }
+        jsonInviato.msg = `id: ${reqId} succesfully updated `
+        res.json(jsonInviato);  //Invio il risultato al Browser
+}
