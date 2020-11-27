@@ -9,7 +9,7 @@ const express = require('express');
 const app = new express();
 const defaultRoutes = require('../routes/default');   // significa ../routes/default.js
 const logRoutes = require('../routes/logging');     
-const apiLibroRoutes = require('../routes/apiLibro');     
+const apiSommaRoutes = require('../routes/apiSomma');     
 const errorContoller = require('../controller/error');    
 const helmet = require('helmet');
 const cors = require('cors');
@@ -27,7 +27,7 @@ app.use(logRoutes);
 app.use(defaultRoutes);               // app.use('/blabla', defaultRoutes);
 app.use(apiSommaRoutes);              // app.use('/blabla', defaultRoutes);
 app.use(errorContoller.get404Page);    
-apiLibroRoutes
+apiSommaRoutes
 
 
 

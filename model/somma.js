@@ -1,5 +1,5 @@
-const somme = [{ id: 1, val1: 5, val2: 3 , somma: val1+val2 },
-                { id: 2, val1: 8, val2: 5 , somma: val1+val2 }];
+const somme = [{ id: 1, val1: 5, val2: 3 , somma: 8 },
+                { id: 2, val1: 8, val2: 5 , somma: 13 }];
 
 
                 module.exports = class Libro {

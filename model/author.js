@@ -1,9 +1,9 @@
-const job="Teacher"
+const job="Studente"
 
 module.exports = class Author {
 
   static getName() {
-    return "Luca Liberti " + job;
+    return "Zhou Lorenzo " + job;
   }
 }
 
